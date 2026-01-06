@@ -9,6 +9,10 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     dnsutils \
     libpq-dev \
     build-essential \
+    zlib1g-dev \
+    libjpeg-dev \
+    libpng-dev \
+    libffi-dev \
  && rm -rf /var/lib/apt/lists/*
 
 RUN pip install --no-cache-dir --upgrade pip
